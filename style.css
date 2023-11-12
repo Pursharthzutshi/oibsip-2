@@ -1,0 +1,307 @@
+body{
+    margin:0;
+    font-family: "Montserrat";
+    color: rgb(47, 47, 47);
+}
+
+.nav-bar ul,header,.header-heading-button-container,.my-skills-parent-container,.skills-categories-container,.my-projects-container,.my-projects-div-content,.parent-about-us-content-image-container{
+    display: flex;
+}
+
+.nav-bar ul,header,.skills-categories-container,.my-skills-parent-container,.my-projects-container,.parent-about-us-content-image-container{
+    flex-direction: row;
+}
+
+.header-heading-button-container,.my-projects-div-content{
+    flex-direction: column;
+}
+
+.header-image{
+    margin-top: 40px;
+    width: 8rem;
+    height: auto;
+}
+.nav-bar ul{
+    margin-top: 0px;
+    justify-content: space-around;
+}
+
+.nav-bar{
+    position: fixed;
+    top:0%;
+    width: 100%;
+    height: 7.3vh;
+    z-index: +1;
+    box-shadow: .2px .2px 4px .2px lightgray;
+    background: linear-gradient(to left,rgba(252, 252, 252, 0.945),rgba(248, 247, 247, 0.901));
+}
+
+.nav-bar li{   
+    list-style: none;
+    margin-top: 14px;
+}
+
+.nav-bar li a{
+    color: black;
+    text-decoration: none;
+}
+
+
+
+/* Header */
+
+
+header{
+    margin-top: 35px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.header-button{
+    text-decoration: none;
+    color: black;
+    background: lightgray;
+    width: 24%;
+    margin-top: 20px;
+    font-size: .9rem;
+    padding: 8px 1px 8px 18px;
+    border: none;
+    font-family: "Poppins";
+}
+span{
+    color:rgb(0, 87, 131);
+}
+.header-heading-button-container{
+    margin-top: 55px;
+}
+.header-heading-button-container h4{
+    margin-top: -4px;
+}
+
+/* skills-section */
+
+
+.skills-section{
+    width: 100%;
+    margin-top: 53px;
+    /* width: 100%; */
+}
+.skills-categories-container{
+    padding: 12px 2px 17px 2px;
+    /* background: rgba(247, 247, 247, 0.295); */
+    background: rgba(250, 253, 255, 0.89);
+    justify-content: center;
+    /* width: 99.68%; */
+    margin-top: 40px;
+    /* background-color: red; */
+    gap:40px;
+}
+
+.skills-categories{
+    padding: 2px 10px 2px 20px;
+    background: white;
+    border: 1px solid rgb(232, 232, 232);
+    border-radius: 20px;
+    width: 20%;
+    /* height: 27vh; */
+}
+
+.skills-categories h4{
+}
+
+.skills-categories p{
+    font-family: "Poppins";
+    font-size: .84rem;
+    line-height: 28px;
+}
+
+.my-skills-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills-section h3{
+    text-align: center;
+}
+
+.my-skills-parent-container{
+    margin-top: 50px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.my-skills-icons{
+    margin-left: 8px;
+    width: 2.4rem;
+    height: auto;
+    font-size: 2rem;
+}
+
+
+h3{
+    text-align: center;
+}
+
+
+/* Projects */
+.projects-section p{
+    color:rgb(107, 107, 107);
+    text-align: center;
+    font-size: .9rem;
+    margin-left: 40px;    
+}
+
+.my-projects-container{
+    margin-top: 37px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:20px;
+}
+
+.my-projects-div-content{
+    opacity: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-projects-div{
+    background-position:center;
+    background-size: cover;
+    width: 37rem;
+    height: 31vh;
+    box-shadow: .2px .2px 2px .2px lightgray;
+}
+
+.my-projects-div:hover .my-projects-div-content{
+    opacity: 1;
+    animation: .17s ease-in showProjectContentEffect;
+
+}
+
+@keyframes showProjectContentEffect {
+    0%{
+    transform: scale(.98);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        
+        opacity: 1;
+    }
+}
+
+.my-projects-div-content{
+    background: rgba(0, 0, 0, 0.585);
+    height: 100%;
+}
+
+.my-projects-div-content a {
+    margin-top: 13px;
+    text-decoration: none;
+    color: white;
+}
+.my-projects-div h4{
+    color: white;
+    text-align: center;
+}
+
+
+.my-projects-div:nth-child(1){
+    background: url("images/page-image.png");
+    background-size: cover;
+}
+.my-projects-div:nth-child(2){
+    background: url("images/food-app.png");
+    background-size: cover;
+}
+.my-projects-div:nth-child(3){
+    background: url("images/blog-app.png");
+    background-size: cover;
+}
+
+.my-projects-div:nth-child(4){
+    background: url("images/competiton.png");
+    background-size: cover;
+}
+
+/* About Us */
+
+
+.about-us-section{
+    line-height: 25px;
+    font-size: .9rem;
+    padding: 12px 2px 12px 12px;
+}
+
+.about-us-content{
+    width: 50%;
+    justify-content: space-evenly;
+    line-height: 32px;
+    padding: 2px 12px 2px 22px;
+    box-shadow: .2px .2px 12px .2px whitesmoke;
+}
+
+.parent-about-us-content-image-container{
+    justify-content: space-around;
+}
+
+.about-us-image-icon{
+    width: 13rem;
+    height: auto;
+}
+
+/* Contact Us */
+
+
+.contact-us-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    justify-content: space-around;
+}
+
+
+.contact-us-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-us-form p{
+    margin-top: -8px;
+    line-height: 26px;
+    text-align: center;
+    font-size: .9rem;
+}
+
+.contact-us-form input{
+    width: 50%;
+    margin-top:10px;    
+    border: none;        
+    box-shadow: .2px .2px 12px .2px whitesmoke;
+    padding: 12px 2px 12px 12px;
+
+}
+
+.contact-us-form button{
+    background: linear-gradient(to left,rgb(223, 223, 223),rgb(238, 238, 238));
+    border: none;
+    padding: 4px 12px 4px 12px;
+    font-size: .94rem;
+}
+
+.contact-us-form input::placeholder{
+    font-size: .8rem;
+    font-family: "Montserrat";
+    letter-spacing: 2px;
+}
+
+textarea{
+    border: none;
+    box-shadow: .2px .2px 8px .2px rgb(241, 241, 241);
+    margin-top: 20px;
+}

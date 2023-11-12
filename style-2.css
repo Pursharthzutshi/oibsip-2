@@ -1,0 +1,101 @@
+body{
+    margin:0;
+    font-family: "Montserrat";
+
+}
+
+.nav-bar ul,header,.header-heading-button-container,.my-skills-parent-container,.my-skills-text-container,.my-skills-image-container{
+    display: flex;
+}
+
+.nav-bar ul,header,.my-skills-image-container{
+    flex-direction: row;
+}
+
+.header-heading-button-container,.my-skills-parent-container{
+    flex-direction: column;
+}
+.nav-bar ul{
+    justify-content: space-around;
+}
+
+.nav-bar{
+    margin-top: -16px;
+    width: 100%;
+    height: 8vh;
+    box-shadow: .2px .2px 4px .2px lightgray;
+    background: white;
+}
+
+.nav-bar li{   
+    list-style: none;
+    margin-top: 14px;
+}
+
+.nav-bar li a{
+    color: black;
+    text-decoration: none;
+}
+
+
+
+/* Header */
+
+
+header{
+    margin-top: 20px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-button{
+    width: 50%;
+    margin-top: 20px;
+    font-size: .9rem;
+    padding: 8px 5px 8px 5px;
+    border: none;
+    font-family: "Poppins";
+}
+span{
+    color:rgb(0, 87, 131);
+}
+.header-heading-button-container{
+    margin-top: 27px;
+}
+.header-heading-button-container h4{
+    margin-top: -4px;
+}
+
+/* skills-section */
+
+
+.skills-section{
+    flex-wrap: wrap;
+    margin-top: 53px;
+}
+
+.skills-section h3{
+    text-align: center;
+}
+
+.my-skills-parent-container{
+    margin-top: 50px;
+    align-items: center;
+}
+
+
+.my-skills-image-container{
+    justify-content: space-around;
+    gap:148px;
+}
+
+.my-skills-text-container{
+    gap:130px;
+
+}
+
+.my-skills-icons{
+    width: 2.4rem;
+    height: auto;
+    font-size: 2rem;
+}
